@@ -1,0 +1,250 @@
+{
+	"compiler": {
+		"version": "0.8.23+commit.f704f362"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"anonymous": false,
+				"inputs": [],
+				"name": "RenounceOwnership",
+				"type": "event"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint8",
+						"name": "x",
+						"type": "uint8"
+					},
+					{
+						"internalType": "uint8",
+						"name": "y",
+						"type": "uint8"
+					}
+				],
+				"name": "chunkIndex",
+				"outputs": [
+					{
+						"internalType": "uint16",
+						"name": "",
+						"type": "uint16"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getBitmap",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint8",
+						"name": "x",
+						"type": "uint8"
+					},
+					{
+						"internalType": "uint8",
+						"name": "y",
+						"type": "uint8"
+					}
+				],
+				"name": "getChunk",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getChunks",
+				"outputs": [
+					{
+						"internalType": "uint256[576]",
+						"name": "",
+						"type": "uint256[576]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getChunksCount",
+				"outputs": [
+					{
+						"internalType": "uint16",
+						"name": "x",
+						"type": "uint16"
+					},
+					{
+						"internalType": "uint16",
+						"name": "y",
+						"type": "uint16"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "owner",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "ownerRenounce",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint8",
+						"name": "x",
+						"type": "uint8"
+					},
+					{
+						"internalType": "uint8",
+						"name": "y",
+						"type": "uint8"
+					},
+					{
+						"internalType": "uint256",
+						"name": "chunkData",
+						"type": "uint256"
+					}
+				],
+				"name": "setChunk",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint16",
+						"name": "chunkIndex_",
+						"type": "uint16"
+					},
+					{
+						"internalType": "uint256",
+						"name": "chunkData",
+						"type": "uint256"
+					}
+				],
+				"name": "setChunkByIndex",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "newOwner",
+						"type": "address"
+					}
+				],
+				"name": "transferOwnership",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/canvas/Canvas.sol": "Canvas"
+		},
+		"evmVersion": "paris",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": true,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"@openzeppelin/contracts/utils/Base64.sol": {
+			"keccak256": "0x6f7014d688c4386c26e8c02371ecb7f7740d2542f1ecadffd5a3084511e2a344",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://81d8f5aabdb088f19c80ce460a2e670ecc651ff4ca46878d239e29bfe705e52c",
+				"dweb:/ipfs/QmUveDGa7vEtYBxbVUajNcDvyjP6oaD7Va1M5qwZbudmAn"
+			]
+		},
+		"contracts/canvas/Canvas.sol": {
+			"keccak256": "0x6c6d5536189fe25826ec5a14f32f91f69665d94d921258c3a04fa38a98967815",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://889bdc6a39a1336f0a5da4d1e9dec31cac043523f2dc75ece759861b79705f16",
+				"dweb:/ipfs/QmXNbfTeFm33FFEi22uENmqpBXnApSoGjRcy97NALSwbeC"
+			]
+		},
+		"contracts/canvas/CanvasBounds.sol": {
+			"keccak256": "0xe8ff81dc0942b0859ba6a84baf6c1cc0217a9bb80809818a1f39e83b2b96e2fa",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://9af94656160b03c74501fef36f3bc409121240231c904be33bb42506231cf4a5",
+				"dweb:/ipfs/QmPEdcq1NvkYi4umNehodiLpZCv1tvZTrnAihguAFK5UmU"
+			]
+		},
+		"contracts/canvas/ICanvas.sol": {
+			"keccak256": "0x593ddb58d24480e0f82d07b0a3e85a1fd4a63242d8da973f7c86f65c734957e1",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://e79efe8acf9d19a3cdc2d35fdf6abba701cea03d8725c763b0892e909f936ef6",
+				"dweb:/ipfs/QmSfrWw2Anf5xXKA3wmz7DbqzSxDecj5PRmTjHrh9Ybktn"
+			]
+		},
+		"contracts/lib/Ownable.sol": {
+			"keccak256": "0x85fd0a0ffe07c912404091c431d9f6451c6256d9828523ecbdb655b184a32ce8",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://726481417ecbf2afdc12c6b2931e9c5853ed5c68bc9322ba5be519e907fbe96d",
+				"dweb:/ipfs/QmTdNXx979KzhdK5DnYzYup5kse9FY8RnSU6B6W3wWm7pY"
+			]
+		}
+	},
+	"version": 1
+}
